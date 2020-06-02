@@ -13,6 +13,8 @@
     background-size: cover;
     height: 100vh;
     width: 100%;
+    /* position: fixed; */
+    /* top: 10px; */
 }
 
 .heading1{
@@ -71,7 +73,19 @@
         width:75%;
     }
 }
-#container{
-    position: fixed;
-    top: 10px;
+
+#alertcontainer{
+    height: 50px;
+    background:#2f2f;
+    position:sticky;
+    top: 55px;
+    display: none; 
+}
+#heading2{
+    text-align: center;
+    padding: 10px;
+}
+#close{
+    position: relative;
+    left: 35%;
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Raj Empire</title>
     <script>
        function popup(){
@@ -70,30 +71,36 @@
         </div>
     </nav>
     <!-- <div class="container"> -->
-        <div id='container' class="container-fluid container2">
+        <div id="alertcontainer">
+            
+            <h3 id="heading2">Select All The Options.<i id='close' class="fa fa-close"></i></h3>
+
+        </div>
+        
+        <div class="container-fluid container2">
              <div class="propertyContainer">
                  <h1 class='heading1' style='color:black;'>Find Your Favorite Property</h1>
              </div>
             <div class="propertyContainerChild">
-             <select class='select' name="select" id="">
+             <select id='selectedCity' class='select' name="select" id="">
                  <option value="car">Select City</option>
-                 <option value="car">Kanpur</option>
-                 <option value="car">Lucknow</option>
-                 <option value="car">Gorakhpur</option>
+                 <option value="kanpur">Kanpur</option>
+                 <option value="lucknow">Lucknow</option>
+                 <!-- <option value="gorakhpur">Gorakhpur</option> -->
              </select>
-             <select class='select' name="select" id="">
+             <select id='selectedproperty' class='select' name="select" id="">
                  <option value="car">Select Property Type</option>
-                <option value="car">Residential</option>
-                <option value="car">Commercial</option>
-                <option value="car">Industrial</option>
+                <option value="residential">Residential</option>
+                <option value="commercial">Commercial</option>
+                <!-- <option value="industrial">Industrial</option> -->
              </select>
-             <select class='select' name="select" id="">
+             <select id='selectedstatus' class='select' name="select" id="">
                  <option value="car">Select Any Status</option>
-                <option value="car">For sale</option>
-                <option value="car">For contract</option>
-                <option value="car">Sold</option>
+                <option value="forsale">For sale</option>
+                <option value="forcontract">For contract</option>
+                <!-- <option value="sold">Sold</option> -->
              </select>
-             <button class='selectbtn'>Search</button>
+             <button id='search' class='selectbtn'>Search</button>
             </div>
 
         </div>
@@ -111,6 +118,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>

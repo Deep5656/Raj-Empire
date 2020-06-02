@@ -4,3 +4,7 @@
     height: 100vh;
     width: 100%;
 }
+#nav{
+    position: sticky;
+    top: 0px;
+}
