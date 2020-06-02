@@ -89,3 +89,8 @@
     position: relative;
     left: 35%;
 }
+@media(max-width:768px){
+    #close{
+        left:5%;
+    }
+}
