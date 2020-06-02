@@ -71,3 +71,7 @@
         width:75%;
     }
 }
+#container{
+    position: fixed;
+    top: 10px;
+}
